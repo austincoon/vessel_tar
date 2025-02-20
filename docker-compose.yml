@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: vessel_db
+      MYSQL_USER: vessel_user
+      MYSQL_PASSWORD: vessel_pass
+    ports:
+      - "3306:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+
+  backend:
+    image: vessel-investor-backend:latest
+    container_name: fastapi_app
+    restart: always
+    depends_on:
+      - mariadb
+    environment:
+      DATABASE_URL: "mysql+mariadbconnector://vessel_user:vessel_pass@mariadb:3306/vessel_db"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app   # Optional, if you need source code mounted
+    working_dir: /app
+    command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+
+  frontend:
+    image: vessel-investor-frontend:latest
+    container_name: react_app
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app:delegated
+      - /app/node_modules
+    working_dir: /app
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    command: ["npm", "start"]
+
+volumes:
+  mariadb_data:
