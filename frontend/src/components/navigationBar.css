@@ -1,0 +1,139 @@
+/* navigationBar.css */
+
+.navigation-bar {
+  box-sizing: border-box;
+  width: 250px; /* Fixed width */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top */
+  align-items: flex-start;
+  padding: 24px 23px 32px 23px;
+  box-shadow: inset 0.588px 0.588px 0.831px -0.536px rgba(255, 0, 0, 0.37),
+              inset 1.44px 1.44px 2.036px -1.071px rgba(255, 0, 0, 0.363),
+              inset 2.728px 2.728px 3.858px -1.607px rgba(255, 0, 0, 0.35227),
+              inset 4.763px 4.763px 6.735px -2.143px rgba(255, 0, 0, 0.33531),
+              inset 8.289px 8.289px 11.722px -2.679px rgba(255, 0, 0, 0.30593),
+              inset 15.182px 15.182px 21.471px -3.214px rgba(255, 0, 0, 0.24848),
+              inset 30px 30px 42.426px -3.75px rgba(255, 0, 0, 0.125);
+  background-color: #000000;
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  position: fixed; /* Fix navbar to the viewport */
+  top: 0;
+  left: 0;
+  border-right: 1px solid #000000; /* Simplified border */
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Space between profile section and menu */
+  color: white;
+}
+
+.profile-image {
+  width: 40px !important;
+  height: 40px !important;
+  display: block;
+  overflow: visible;
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  margin-right: 10px; /* Space between image and username */
+  cursor: pointer; /* Indicates clickable */
+}
+
+.user-name {
+  font-size: 18px;
+  margin: 0;
+  color: #fff;
+  z-index: 5;
+}
+
+.navigation-bar .profile-section .user-name {
+  font-size: 18px;
+  margin: 0;
+  color: #fff !important;
+}
+
+h5 {
+  margin-bottom: 10px; /* Adjusted for better spacing */
+  font-size: 14px;
+  color: #fff;
+}
+
+.nav-menu {
+  width: 100%; /* Occupies full width of the navbar */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  margin-top: 10px; /* Adds spacing from the profile section */
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.nav-menu ul li {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.nav-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center; /* Aligns icon and text horizontally */
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-menu ul li a:hover {
+  background-color: #333;
+}
+
+.nav-menu ul li a.nav-link {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu ul li a.nav-link .nav-icon {
+  width: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.nav-link.active {
+  color: red; /* Active link color */
+  font-weight: bold;
+  border-bottom: 2px solid red; /* Underline or indicator */
+}
+
+
+.contact-section {
+  text-align: center;
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,95 @@
+/* Overall container matching the Property.js layout */
+.property-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Inner content container */
+  .property-content {
+    text-align: center;
+  }
+  
+  /* Heading styling */
+  .property-content h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  /* Grid layout for property cards */
+  .property-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  /* Styling for each property card */
+  .property-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image styling inside the card */
+  .property-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  /* Container for property details inside the card */
+  .property-details {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .property-details h2 {
+    font-size: 1.3rem;
+    margin: 0;
+    color: #333;
+  }
+  
+  .property-details p {
+    margin: 0.5rem 0;
+    color: #555;
+  }
+  
+  /* Styling for the Add New Property card */
+  .add-property-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #aaa;
+    background-color: #fafafa;
+    color: #777;
+  }
+  
+  .add-property-card:hover {
+    border-color: #333;
+    color: #333;
+  }
+  
+  .add-property-content {
+    text-align: center;
+  }
+  
+  .plus-icon {
+    font-size: 2.5rem;
+    display: block;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: red;
+    text-align: center;
+  }
+  

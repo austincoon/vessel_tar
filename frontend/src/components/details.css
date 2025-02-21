@@ -1,0 +1,132 @@
+/* src/components/details.css */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap');
+
+/* -----------------------------
+   1. Global Styles
+----------------------------- */
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set base font and background */
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* -----------------------------
+   2. Details Container
+----------------------------- */
+
+.details-container {
+  max-width: 600px; /* Adjust based on your design */
+  width: 90%;
+  margin: 40px auto; /* Center horizontally with top and bottom margin */
+  padding: 20px;
+  background-color: #ffffff; /* White background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Title */
+.details-title {
+  font-size: 28px;
+  color: #007BFF; /* Primary color */
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* -----------------------------
+   3. Details Sections
+----------------------------- */
+
+.details-section {
+  margin-bottom: 25px; /* Space between sections */
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0; /* Light border to separate sections */
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #1c1c1c;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.section-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.section-content {
+  font-size: 16px;
+  color: #555555;
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* -----------------------------
+   4. Placeholder Styling
+----------------------------- */
+
+.no-details {
+  text-align: center;
+  font-size: 18px;
+  color: #777777;
+  margin-top: 50px;
+}
+
+/* -----------------------------
+   5. Responsive Design
+----------------------------- */
+
+@media (max-width: 768px) {
+  .details-container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .details-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .section-heading {
+    font-size: 18px;
+  }
+
+  .section-content {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-container {
+    width: 95%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .details-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .section-heading {
+    font-size: 16px;
+  }
+
+  .section-content {
+    font-size: 14px;
+  }
+}

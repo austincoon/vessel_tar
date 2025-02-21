@@ -1,0 +1,117 @@
+/* Overall page container */
+.investors-page {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding-bottom: 2rem;
+}
+
+/* Content container */
+.investors-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Filter info styling */
+.filter-info {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.filter-info p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.filter-info button {
+  padding: 0.5rem 1rem;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.filter-info button:hover {
+  background-color: #0056b3;
+}
+
+/* Slider container for investor cards */
+.investors-slider-container {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.investors-slider-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Horizontal slider styling */
+.investors-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 0 1rem;
+  min-height: 350px; /* Increased height for more space */
+}
+
+/* Detailed investor card styling */
+.investor-card {
+  flex: 0 0 auto;
+  width: 300px; /* Fixed width for detailed view */
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.investor-card:hover {
+  transform: translateY(-3px);
+}
+
+.profile-image {
+  width: 100%;
+  height: 250px; /* Increased image height */
+  object-fit: cover;
+}
+
+.user-details {
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+.user-details h2 {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.user-details p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Map container styling */
+.investor-map-container {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.investor-map-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}

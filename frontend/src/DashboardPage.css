@@ -1,0 +1,58 @@
+.dashboard-page {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.dashboard-content {
+  max-width: 1200px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.dashboard-content h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.dashboard-content p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Container for text content with two columns */
+.dashboard-text-columns {
+  column-count: 2;
+  column-gap: 40px;
+  text-align: left; /* Optional: left-align the text within each column */
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+/* Styles for headings and lists inside the two-column text */
+.dashboard-text-columns h2,
+.dashboard-text-columns h3,
+.dashboard-text-columns h4 {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
+
+.dashboard-text-columns p,
+.dashboard-text-columns li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.dashboard-text-columns ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-text-columns li {
+  margin-bottom: 0.5rem;
+}

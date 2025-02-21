@@ -1,0 +1,29 @@
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <title>House Outline with Question Mark</title>
+  
+  <!-- House silhouette -->
+  <!-- A simple house shape: triangular roof (apex at top) and rectangular body -->
+  <path 
+    d="M300,100 
+       L150,250 
+       L150,500 
+       L450,500 
+       L450,250 
+       Z"
+    fill="#cccccc"      
+    stroke="#555555"  
+    stroke-width="2"
+  />
+  
+  <!-- Question mark in the center -->
+  <text 
+    x="50%" 
+    y="55%" 
+    font-size="200" 
+    fill="#555555" 
+    dominant-baseline="middle" 
+    text-anchor="middle"
+  >
+    ?
+  </text>
+</svg>

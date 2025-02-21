@@ -1,0 +1,110 @@
+/* Overall login page container */
+.login-page-container {
+  /* You can add any global styling for the login page here */
+}
+
+/* Login container styling */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.login-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.login-container form div {
+  margin-bottom: 15px;
+}
+
+.login-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: black;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-container button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* --------------------------
+   Password Field Styling
+-------------------------- */
+.password-field {
+  margin-bottom: 1rem;
+}
+
+/* Wrapper for positioning password input and toggle icon */
+.password-input-wrapper {
+  position: relative;
+}
+
+/* Password input styling with extra right padding */
+.password-input {
+  width: 100%;
+  padding: 8px 40px 8px 8px; /* Extra right padding for the icon */
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.toggle-password-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 20px;  /* adjust this value as needed */
+  height: 20px; /* or set auto to maintain aspect ratio */
+  object-fit: contain;
+  user-select: none;
+}
+
+
+/* Hover effect for toggle icon */
+.toggle-password-icon:hover {
+  opacity: 0.8;
+}
+
+.register-account {
+
+  padding-top: 10px;
+}

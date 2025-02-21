@@ -1,0 +1,90 @@
+/* Overall container */
+.project-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.project-content {
+  text-align: center;
+}
+
+.project-content h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Grid layout for project cards */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Project card styling */
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-details {
+  padding: 1rem;
+  text-align: left;
+}
+
+.project-details h2 {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #333;
+}
+
+.project-details p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+/* Add New Project card styling */
+.add-project-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #aaa;
+  background-color: #fafafa;
+  color: #777;
+}
+
+.add-project-card:hover {
+  border-color: #333;
+  color: #333;
+}
+
+.add-project-content {
+  text-align: center;
+}
+
+.plus-icon {
+  font-size: 2.5rem;
+  display: block;
+}
+
+/* Error styling */
+.error {
+  color: red;
+  text-align: center;
+}

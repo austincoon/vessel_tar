@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+gunicorn
+sqlalchemy
+pymysql  # Required for MariaDB
+python-dotenv  # If using environment variables
+mariadb
+python-jose  # For JWT handling
+passlib[bcrypt]  # For secure password hashing
+pydantic[email]
+bcrypt==3.2.0
+python-multipart==0.0.20
